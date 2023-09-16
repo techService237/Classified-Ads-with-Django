@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'product',
     'bootstrap4',
     'home',
-    'ckeditor'
+    'ckeditor',
+    'index'
 ]
 
 MIDDLEWARE = [

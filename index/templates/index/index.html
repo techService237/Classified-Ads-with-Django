@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+        
+        <h1>Our beautifull app</h1>
+         <p>Les dernier annonces postés:<p>
+        <ul>
+            {% for ad in ads %}
+            <li>title:{{ad.title}}<br/> ,
+                description:{{ad.description}} <br/>
+                price:{{ad.price}}<br/>
+                owner:{{ad.owner}}
+             </li>
+            {%endfor%}
+        </ul>
+        <p>Total: {{ ads|length }} annonces</p>
+        
+{%endblock  body%}
